@@ -1,0 +1,100 @@
+@font-face {
+    font-family: MyTitleFont;
+    src: url(recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url(recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3E5D8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(24, 5%, 18%);
+    font-family: MyFont;
+    font-size: 16px;
+}
+
+/* configuração geral */
+ol, ul{
+    list-style-position: inside;
+}
+
+li:before{
+    content: '';
+    padding-left: 10px;
+}
+
+/* container */
+.container{
+    position: relative;
+    background-color: #FFF;
+    width: 740px;
+    border-radius: 20px;
+    margin-top: 150px;
+    padding: 2%;
+}
+
+/* container imagem */
+.img-container{
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+/* titles */
+.container-h1, h2, h3, h4{
+    font-family: MyTitleFont;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.container-h1{
+    font-size: 40px;
+}
+
+/* preparation section */
+.preparation-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FFF7FC;
+    border-radius: 15px;
+    color: hsla(15, 4%, 18%, 0.813);
+}
+
+.preparation-section h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #952d57;
+}
+
+.preparation-section ul{
+    list-style-position: inside;
+    margin-left: 10px;
+    line-height: 1.8em;
+}
+
+.preparation-section ul span{
+    font-weight: bold;
+}
+
+.preparation-section li::marker{
+    color: #952d57;
+    font-size: 0.8em;
+}
