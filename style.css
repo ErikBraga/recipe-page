@@ -20,19 +20,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(24, 5%, 18%);
+    color: hsla(15, 4%, 18%, 0.818);
     font-family: MyFont;
     font-size: 16px;
 }
 
 /* configuração geral */
-ol, ul{
-    list-style-position: inside;
+hr{
+    border-top: 1px solid #ccccccb2;
 }
 
-li:before{
-    content: '';
-    padding-left: 10px;
+span{
+    font-weight: bold;
 }
 
 /* container */
@@ -41,13 +40,13 @@ li:before{
     background-color: #FFF;
     width: 740px;
     border-radius: 20px;
-    margin-top: 150px;
-    padding: 2%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 40px;
 }
 
 /* container imagem */
 .img-container{
-    height: 300px;
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -85,16 +84,108 @@ li:before{
 }
 
 .preparation-section ul{
-    list-style-position: inside;
-    margin-left: 10px;
+    margin-left: 25px;
     line-height: 1.8em;
 }
 
-.preparation-section ul span{
-    font-weight: bold;
+.preparation-section li{
+    text-align: left;
+    padding-left: 10px;
 }
 
 .preparation-section li::marker{
     color: #952d57;
     font-size: 0.8em;
+}
+
+/* ingredients */
+.container h2{
+    color: #a14e38;
+    font-size: 26px;
+}
+
+.ingredients-list{
+    margin-left: 25px;
+    line-height: 1.8em;
+    margin-bottom: 25px;
+}
+
+.ingredients-list li{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.ingredients-list li::marker{
+    color: #a14e38;
+    font-size: 0.8em;
+}
+
+/* instructions */
+.container h3{
+    color: #a14e38;
+    font-size: 26px;
+    margin-top: 25px;
+}
+
+.container ol{
+    margin-left: 20px;
+    line-height: 1.8em;
+    margin-bottom: 25px;
+}
+
+.container ol li{
+    text-align: left;
+    padding-left: 13px;
+    margin-bottom: 8px;
+}
+
+ol li::marker{
+    font-weight: bold;
+    color: #a14e38;
+    font-size: 0.9em;
+}
+
+/* nutrition */
+.container h4{
+    color: #a14e38;
+    font-size: 26px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.p-margin{
+    margin-bottom: 15px;
+}
+
+.row-container{
+    padding: 15px 30px;
+    display: flex;
+}
+
+.p-txt, .p-num{
+    display: inline-block;
+    width: 50%;
+}
+
+.p-num{
+    font-weight: bold;
+    color: #a14e38;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        position: relative;
+        background-color: #FFF;
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 40px;
+    }
+
+    .img-container{
+        margin: -40px;
+        border-radius: 0;
+        margin-bottom: 30px;
+    }
 }
